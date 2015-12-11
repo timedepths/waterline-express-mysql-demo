@@ -11,7 +11,7 @@ module.exports = {
             Name:'Livia',
             password:'123456'
         };
-        req.model.user.create(User).exec(function(err,result){
+        req.models.user.create(User).exec(function(err,result){
             res.json({Result:result,error:err});
         });
     },
